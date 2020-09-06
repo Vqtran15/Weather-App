@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 const api = {
   key: "f33a484cf794d08d0148764789aaba32",
-  base: "http://api.openweathermap.org/data/2.5/"
+  base: "https://api.openweathermap.org/data/2.5/"
 }
 function App() {
 
@@ -37,7 +37,7 @@ function App() {
           <input 
           type="text" 
           className="search-bar" 
-          placeholder="Search..."
+          placeholder="Search city or state for current weather"
           onChange={e => setQuery(e.target.value)}
           value={query}
           onKeyPress={search}
